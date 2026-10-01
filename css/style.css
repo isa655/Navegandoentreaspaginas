@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ffe4ec;
+}
+
+span {
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5px;
+    color: #b82349;
+}
+
+header {
+    background-color: #e94b6b;
+    color: white;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nome span {
+    color: #fff3a6;
+    margin-top: 8px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.inicial a {
+    font-weight: bold;
+    background-color: #ff8fab;
+    padding: 10px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #d9365e;
+}
+
+.personagens a {
+    font-weight: bold;
+    background-color: #ff8fab;
+    padding: 10px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #d9365e;
+}
+
+.curiosidades a {
+    font-weight: bold;
+    background-color: #e2aab8;
+    padding: 10px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #c997a4;
+}
+
+
+#apresentacao {
+    padding: 23px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    gap: 10px;
+    background-color:rgb(231, 196, 217);
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#apresentacao img {
+    width: 500px;
+    height: 350px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+#apresentacao p {
+    padding-bottom: 15px;
+    color: #4a2430;
+}
+
+.texto h2 {
+    font-size: 65px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #b82349;
+}
+
+.texto p {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+
+/* DESTAQUES */
+
+#destaques {
+    padding: 20px;
+}
+
+#cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    width: 30%;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    border-style: solid;
+    border-color: #ffb3c6;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin-top: 25px;
+    color: #c92a4b;
+}
+
+.card p {
+    margin-top: 8px;
+    font-weight: 500;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4a2430;
+}
+
+.figurinha {
+    font-size: 75px;
+}
+
+
+/* BOTÃO */
+
+.gotodestaques {
+    font-weight: bold;
+    background-color: #ff8fab;
+    padding: 10px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #d9365e;
+}
+
+
+/* LINK PARA PERSONAGENS */
+
+#gotopersonagens {
+    text-align: center;
+    background-color: #fff0a8;
+    padding: 25px;
+}
+
+#gotopersonagens h3 {
+    margin-bottom: 20px;
+    color: #b82349;
+}
+
+#gotopersonagens a {
+    font-weight: bold;
+    background-color: #ff8fab;
+    padding: 10px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #d9365e;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+    background-color: #e94b6b;
+    color: white;
+    padding: 20px;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.link {
+    display: flex;
+    gap: 20px;
+}
+
+.links1 {
+    font-weight: bold;
+    background-color: #ff8fab;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #d9365e;
+    padding: 10px;
+}
+
+.links2 {
+    font-weight: bold;
+    background-color: #ff8fab;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #d9365e;
+    padding: 10px;
+}
+
+a:hover {
+    color: #fff0a8;
+}
+
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #apresentacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #apresentacao img {
+        width: 100%;
+        height: auto;
+    }
+
+    .texto h2 {
+        font-size: 45px;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
